@@ -1,0 +1,15 @@
+{C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/RegisterFile/RegisterFile_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/RegisterFile/RegisterFile_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RegisterFile_tb
+
+Top level modules:
+	RegisterFile_tb
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/RegisterFile/RegisterFile.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/RegisterFile/RegisterFile.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}}

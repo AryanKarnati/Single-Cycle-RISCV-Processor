@@ -1,0 +1,73 @@
+`timescale 1ns / 1ps
+
+module RegisterFile_tb;
+
+//Inputs
+logic clk;
+logic we;
+logic [4:0] rs1;
+logic [4:0] rs2; 
+logic [4:0] rd;
+logic [31:0] wd;
+
+//Outputs
+logic [31:0] rd1;
+logic [31:0] rd2; 
+
+//Instantiate Register File Module
+RegisterFile dut (
+    .clk(clk),
+    .we(we),
+    .rs1(rs1),
+    .rs2(rs2),
+    .rd(rd),
+    .wd(wd),
+    .rd1(rd1),
+    .rd2(rd2)
+);
+
+// Clock generation
+initial clk = 0;
+always #5 clk = ~clk; // 10ns clock period  
+
+// Test stimulus
+  initial begin
+    // Initialize inputs
+    we = 0;
+    rs1 = 0;
+    rs2 = 0;
+    rd = 0;
+    wd = 0;
+
+    // Wait for global reset
+    #10;
+
+    // Write 0xDEADBEEF to register 5
+    we = 1;
+    rd = 5;
+    wd = 32'hDEADBEEF;
+    #10;
+
+    // Write 0xCAFEBABE to register 10
+    rd = 10;
+    wd = 32'hCAFEBABE;
+    #10;
+
+    // Disable write
+    we = 0;
+    #10;
+
+    // Read from register 5 and 10
+    rs1 = 5;
+    rs2 = 10;
+    #10;
+
+    // Display the read values
+    $display("Read Data 1 (rd1): %h", rd1);
+    $display("Read Data 2 (rd2): %h", rd2);
+
+    // Finish simulation
+    $finish;
+  end
+
+endmodule
