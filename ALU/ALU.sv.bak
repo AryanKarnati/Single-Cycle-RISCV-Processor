@@ -1,0 +1,19 @@
+module ALU(
+	input logic [31:0] A, //First Operand
+	input logic [31:0] B, // Second Operand
+	input logic [3:0] ALUControl, //Control signal to select ALU operation
+	output logic [31:0] result, // Final result after operation
+	output logic zero // Zero flag: high if result is zero
+);
+
+always_comb begin
+	case(ALUControl)
+	  4'b0000: result = A & B; // AND Operation
+	  4'b0001: result = A | B; // OR Operation
+	  4'b0010: result = A + B; // Addition
+	  4'b0011: result = A - B; // Subtraction
+	  4'b0100: result = (A < B) ? 32'b1: 32'b0; // SLT 
+	  4'b0101: result = A ^ B; // XOR Operation
+	default: result = 32'b0; // Default Value of 0
+ endcase
+end
