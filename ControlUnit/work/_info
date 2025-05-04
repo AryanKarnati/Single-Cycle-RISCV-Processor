@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vControlUnit
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1746383046
+!i10b 1
+!s100 358E6@ifT1OI3H:_G;17R1
+IRSLiAdnSAK9D8[968gX_93
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ControlUnit_sv_unit
+S1
+Z3 dC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit
+w1746383043
+8C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit.sv
+FC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1746383045.000000
+!s107 C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+n@control@unit
+vControlUnit_tb
+R0
+R1
+!i10b 1
+!s100 Ycf3CdG^Q8VDkUl2T[e6]3
+IVZ0@ma]@CTd>dOzK__WLd0
+R2
+!s105 ControlUnit_tb_sv_unit
+S1
+R3
+w1746238469
+8C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit_tb.sv
+FC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit_tb.sv
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1746383046.000000
+!s107 C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit_tb.sv|
+!i113 1
+R5
+R6
+n@control@unit_tb
