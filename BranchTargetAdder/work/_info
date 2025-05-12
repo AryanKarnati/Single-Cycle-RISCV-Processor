@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vBranchTargetAdder
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1747011152
+!i10b 1
+!s100 i4QZPhhkoO4gB^U@>[cX03
+I`6h<M386<<[W1BPQ6E0`>1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 BranchTargetAdder_sv_unit
+S1
+Z2 dC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder
+w1747010786
+8C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder.sv
+FC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1747011152.000000
+!s107 C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder.sv|
+!i113 1
+Z4 o-work work -sv
+Z5 tCvgOpt 0
+n@branch@target@adder
+vBranchTargetAdder_tb
+R0
+!s110 1747011153
+!i10b 1
+!s100 ^E2CNj<AX9UCecb?VgPH71
+IVQmQnU><2QHf1nG_g=6aS0
+R1
+!s105 BranchTargetAdder_tb_sv_unit
+S1
+R2
+w1747011149
+8C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder_tb.sv
+FC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1747011153.000000
+!s107 C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder_tb.sv|
+!i113 1
+R4
+R5
+n@branch@target@adder_tb
