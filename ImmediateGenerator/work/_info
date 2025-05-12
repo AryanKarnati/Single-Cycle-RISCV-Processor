@@ -1,0 +1,60 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vImmediateGenerator
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1747009190
+!i10b 1
+!s100 5R0Z]P`@l3U52n0IMj:Qf1
+IQnc;ebMK>X^;RL`TcM@AX1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ImmediateGenerator_sv_unit
+S1
+Z2 dC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator
+w1746579695
+8C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator.sv
+FC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator.sv
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1747009190.000000
+!s107 C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator.sv|
+!i113 1
+Z5 o-work work -sv
+Z6 tCvgOpt 0
+n@immediate@generator
+vImmediateGenerator_tb
+R0
+!s110 1747009191
+!i10b 1
+!s100 ?:hCZS:UH`@U4?n0I0_680
+Ie0bnzSoCRV:FlLQAT09o41
+R1
+!s105 ImmediateGenerator_tb_sv_unit
+S1
+R2
+w1747009187
+8C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator_tb.sv
+FC:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator_tb.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator_tb.sv|
+!i113 1
+R5
+R6
+n@immediate@generator_tb
