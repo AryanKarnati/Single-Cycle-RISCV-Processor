@@ -1,0 +1,85 @@
+{C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ProgramCounter/Program_Counter.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ProgramCounter/Program_Counter.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Program_Counter
+
+Top level modules:
+	Program_Counter
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/NextPCMux/NextPCMux.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/NextPCMux/NextPCMux.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module NextPCMux
+
+Top level modules:
+	NextPCMux
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/SingleCycleCPU/SingleCycleCPU_tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/SingleCycleCPU/SingleCycleCPU_tb.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SingleCycleCPU_tb
+
+Top level modules:
+	SingleCycleCPU_tb
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/RegisterFile/RegisterFile.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/RegisterFile/RegisterFile.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/BranchTargetAdder/BranchTargetAdder.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module BranchTargetAdder
+
+Top level modules:
+	BranchTargetAdder
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/SingleCycleCPU/SingleCycleCPU.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/SingleCycleCPU/SingleCycleCPU.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module SingleCycleCPU
+
+Top level modules:
+	SingleCycleCPU
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ControlUnit/ControlUnit.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ImmediateGenerator/ImmediateGenerator.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ImmediateGenerator
+
+Top level modules:
+	ImmediateGenerator
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ALU/ALU.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ALU/ALU.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/InstructionMemory/InstructionMemory.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/InstructionMemory/InstructionMemory.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module InstructionMemory
+
+Top level modules:
+	InstructionMemory
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/DataMemory/DataMemory.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/DataMemory/DataMemory.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ALUControlUnit/ALUControlUnit.sv} {1 {vlog -work work -sv -stats=none {C:/Users/19ary/OneDrive/Desktop/Single Cycle RISC-V Processor/ALUControlUnit/ALUControlUnit.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module ALUControlUnit
+
+Top level modules:
+	ALUControlUnit
+
+} {} {}}

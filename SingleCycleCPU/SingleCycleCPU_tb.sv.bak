@@ -1,0 +1,35 @@
+`timescale 1ns / 1ps
+
+module SingleCycleCPU_tb;
+
+  // Clock and reset
+  logic clk;
+  logic reset;
+
+  // Instantiate the DUT
+  SingleCycleCPU dut (
+    .clk(clk),
+    .reset(reset)
+  );
+
+  // Clock generation
+  initial begin
+    clk = 0;
+    forever #5 clk = ~clk; // 10ns clock period
+  end
+
+  // Test stimulus
+  initial begin
+    // Initialize
+    reset = 1;
+    #10;
+    reset = 0;
+
+    // Let the CPU run for some cycles
+    #200;
+
+    $display("Test completed");
+    $stop;
+  end
+
+endmodule

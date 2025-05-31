@@ -1,0 +1,121 @@
+// Top-Level Single Cycle RISC-V CPU
+
+module SingleCycleCPU(
+    input logic clk,
+    input logic reset
+);
+
+  // Program Counter wires
+  logic [31:0] pc_current, pc_next, pc_plus4, branch_target;
+
+  // Instruction Memory wires
+  logic [31:0] instruction;
+
+  // Control Unit wires
+  logic RegWrite, ALUSrc, MemWrite, MemToReg, Branch;
+  logic [1:0] ALUOp;
+
+  // Register File wires
+  logic [4:0] rs1, rs2, rd;
+  logic [31:0] rd1, rd2;
+
+  // Immediate Generator
+  logic [31:0] imm_out;
+
+  // ALU wires
+  logic [3:0] ALUControl;
+  logic [31:0] ALU_result;
+  logic zero;
+
+  // Data Memory wires
+  logic [31:0] read_data;
+
+  // Next PC Mux select
+  logic [1:0] pc_src;
+
+  // Assign fields from instruction
+  assign rs1 = instruction[19:15];
+  assign rs2 = instruction[24:20];
+  assign rd  = instruction[11:7];
+
+  // Instantiate modules
+  Program_Counter PC (
+    .clk(clk),
+    .reset(reset),
+    .pc_next(pc_next),
+    .pc_out(pc_current)
+  );
+
+  InstructionMemory IM (
+    .addr(pc_current),
+    .instr(instruction)
+  );
+
+  ControlUnit CU (
+    .opcode(instruction[6:0]),
+    .RegWrite(RegWrite),
+    .ALUSrc(ALUSrc),
+    .MemWrite(MemWrite),
+    .MemToReg(MemToReg),
+    .Branch(Branch),
+    .ALUOp(ALUOp)
+  );
+
+  RegisterFile RF (
+    .clk(clk),
+    .we(RegWrite),
+    .rs1(rs1),
+    .rs2(rs2),
+    .rd(rd),
+    .wd((MemToReg) ? read_data : ALU_result),
+    .rd1(rd1),
+    .rd2(rd2)
+  );
+
+  ImmediateGenerator IG (
+    .instr(instruction),
+    .imm_out(imm_out)
+  );
+
+  ALUControlUnit ALU_CU (
+    .ALUOp(ALUOp),
+    .funct3(instruction[14:12]),
+    .funct7(instruction[31:25]),
+    .ALUControl(ALUControl)
+  );
+
+  ALU alu (
+    .A(rd1),
+    .B((ALUSrc) ? imm_out : rd2),
+    .ALUControl(ALUControl),
+    .result(ALU_result),
+    .zero(zero)
+  );
+
+  DataMemory DM (
+    .clk(clk),
+    .MemWrite(MemWrite),
+    .addr(ALU_result),
+    .wd(rd2),
+    .rd(read_data)
+  );
+
+  BranchTargetAdder BTA (
+    .pc(pc_current),
+    .imm_gn(imm_out),
+    .branch_target(branch_target)
+  );
+
+  assign pc_plus4 = pc_current + 4;
+  assign pc_src = (Branch && zero) ? 2'b01 : 2'b00;
+
+  NextPCMux npc_mux (
+    .pc_plus_4(pc_plus4),
+    .branch_target(branch_target),
+    .jump_target(32'b0), // Jump not implemented
+    .pc_src(pc_src),
+    .next_pc(pc_next)
+  );
+
+endmodule
+
